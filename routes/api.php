@@ -40,6 +40,8 @@ $api->version('v1',[
        // 游客可以访问的接口
        $api->get('categories', 'CategoriesController@index')
            ->name('api.categories.index');
+       $api->get('categories/{category}', 'CategoriesController@show')
+           ->name('api.categories.show');
        $api->get('topics', 'TopicsController@index')
            ->name('api.topics.index');
        $api->get('users/{user}/topics', 'TopicsController@userIndex')

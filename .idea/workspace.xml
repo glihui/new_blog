@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ffe5293f-229a-4699-afac-c3a14d6333a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_18_223838_seed_categories_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_18_223838_seed_categories_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,13 +36,13 @@
           <entry key="env" value="19" />
           <entry key="example" value="3" />
           <entry key="json" value="29" />
-          <entry key="php" value="1971" />
+          <entry key="php" value="1976" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="29" />
-          <entry key="PHP" value="1971" />
+          <entry key="PHP" value="1976" />
           <entry key="PLAIN_TEXT" value="24" />
         </counts>
       </usages-collector>
@@ -50,13 +51,13 @@
           <entry key="env" value="4" />
           <entry key="example" value="1" />
           <entry key="json" value="1" />
-          <entry key="php" value="96" />
+          <entry key="php" value="97" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="1" />
-          <entry key="PHP" value="96" />
+          <entry key="PHP" value="97" />
           <entry key="PLAIN_TEXT" value="5" />
         </counts>
       </usages-collector>
@@ -65,13 +66,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Transformers/TopicTransformer.php">
+        <entry file="file://$PROJECT_DIR$/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="31" column="33" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="33" />
-              <folding>
-                <element signature="e#36#57#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="436">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -106,16 +104,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="42" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="42" />
+            <state relative-caret-position="504">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding>
+                <element signature="e#44#68#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_18_223838_seed_categories_data.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
@@ -193,7 +194,6 @@
         <option value="$PROJECT_DIR$/app/Transformers/CategoryTransformer.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Transformers/UserTransformer.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php" />
         <option value="$PROJECT_DIR$/app/Observers/UserObserver.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/RegisterController.php" />
@@ -213,9 +213,10 @@
         <option value="$PROJECT_DIR$/app/Transformers/TopicTransformer.php" />
         <option value="$PROJECT_DIR$/app/Models/User.php" />
         <option value="$PROJECT_DIR$/app/Models/Topic.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_08_18_223838_seed_categories_data.php" />
+        <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php" />
       </list>
     </option>
   </component>
@@ -331,10 +332,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-6" />
+    <option name="x" value="91" />
     <option name="y" value="23" />
     <option name="width" value="1334" />
-    <option name="height" value="789" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -471,19 +472,19 @@
       <workItem from="1567174752628" duration="448000" />
       <workItem from="1567212041720" duration="13067000" />
       <workItem from="1567303787377" duration="11111000" />
-      <workItem from="1567910419554" duration="179000" />
+      <workItem from="1567910419554" duration="1041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34220000" />
+    <option name="totallyTimeSpent" value="35082000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="23" width="1334" height="789" extended-state="0" />
+    <frame x="91" y="23" width="1334" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8522238" visible="true" weight="0.3490712" />
-      <window_info id="Structure" order="1" sideWeight="0.14777619" side_tool="true" visible="true" weight="0.3490712" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8522293" visible="true" weight="0.15634675" />
+      <window_info id="Structure" order="1" sideWeight="0.1477707" side_tool="true" visible="true" weight="0.15634675" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -684,13 +685,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Policies/TopicsPolicy.php" />
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1224">
@@ -773,17 +767,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2019_08_18_223838_seed_categories_data.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding>
+            <element signature="e#44#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
