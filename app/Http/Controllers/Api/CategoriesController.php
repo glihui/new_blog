@@ -19,7 +19,7 @@ class CategoriesController extends Controller
     {
         $topics = $topic->where('category_id', $category->id)
             ->paginate(20);
-        
+
         return $this->response->paginator($topics, new TopicTransformer());
     }
 }
