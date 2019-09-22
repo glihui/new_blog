@@ -31,6 +31,13 @@ $api->version('v1',[
        // 登录
        $api->post('authorizations', 'AuthorizationsController@store')
            ->name('api.authorizations.store');
+
+       // 刷新token
+       $api->put('authorizations/current', 'AuthorizationsController@update')
+           ->name('api.authorizations.update');
+       // 删除token
+       $api->delete('authorizations/current','AuthorizationsController@destroy')
+           ->name('api.authorizations.destroy');
    });
    $api->group([
        'middleware' => 'api.throttle',
