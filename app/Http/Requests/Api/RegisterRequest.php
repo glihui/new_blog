@@ -18,6 +18,13 @@ class RegisterRequest extends FormRequest
         ];
     }
 
+    public function messages()
+    {
+        return [
+            'name.unique' => '该用户已存在',
+        ];
+    }
+
     public function attributes()
     {
         return [
