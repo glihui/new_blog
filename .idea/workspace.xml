@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffe5293f-229a-4699-afac-c3a14d6333a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Handlers/EncodeHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Handlers/EncodeHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Handlers/EncodeHandler.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +40,13 @@
           <entry key="example" value="3" />
           <entry key="gitignore" value="1" />
           <entry key="json" value="29" />
-          <entry key="php" value="5261" />
+          <entry key="php" value="5270" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="29" />
-          <entry key="PHP" value="5261" />
+          <entry key="PHP" value="5270" />
           <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
@@ -76,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Handlers/EncodeHandler.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="252">
+              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -351,8 +348,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="39" />
-    <option name="y" value="68" />
+    <option name="y" value="69" />
     <option name="width" value="1513" />
     <option name="height" value="766" />
   </component>
@@ -517,15 +513,15 @@
       <workItem from="1569837062378" duration="2625000" />
       <workItem from="1569976694466" duration="5216000" />
       <workItem from="1570236788643" duration="603000" />
-      <workItem from="1570936823856" duration="10948000" />
+      <workItem from="1570936823856" duration="11306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71614000" />
+    <option name="totallyTimeSpent" value="71972000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="39" y="68" width="1513" height="766" extended-state="0" />
+    <frame x="0" y="69" width="1513" height="766" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8264095" visible="true" weight="0.14140041" />
@@ -896,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Handlers/EncodeHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="252">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
         </state>
       </provider>
     </entry>

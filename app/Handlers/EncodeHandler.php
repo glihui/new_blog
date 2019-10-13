@@ -18,7 +18,7 @@ class EncodeHandler extends json{
         if ($this->isJsonPrettyPrintEnabled()) {
             $jsonEncodeOptions[] = JSON_PRETTY_PRINT;
         }
-        if ($content['code'] == 1) {
+        if (isset($content['code']) && $content['code'] == 1) {
             $newContent = $content;
         } else {
             $newContent['data'] = $content;
