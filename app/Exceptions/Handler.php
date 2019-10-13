@@ -46,6 +46,7 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+
         if($exception instanceof \Illuminate\Validation\ValidationException){
             $data = $exception->validator->getMessageBag();
             $msg = collect($data)->first();

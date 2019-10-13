@@ -32,7 +32,6 @@ class AppServiceProvider extends ServiceProvider
         });
 
 
-
         \API::error(function (\Illuminate\Validation\ValidationException $exception){
             $data =$exception->validator->getMessageBag();
             $msg = collect($data)->first();
@@ -44,6 +43,10 @@ class AppServiceProvider extends ServiceProvider
         \API::error(function (\Dingo\Api\Exception\ValidationHttpException $exception){
             $errors = $exception->getErrors();
             return response()->json(['message'=>$errors->first(),'code'=>1, 'data' => ''], 200);
+        });
+        \API::error(function (\Exception $exception) {
+            $error = $exception->getMessage();
+            return response()->json(['message'=>$error,'code'=>1, 'data' => ''], 200);
         });
 
     }
