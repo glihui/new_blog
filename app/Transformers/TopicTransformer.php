@@ -14,6 +14,7 @@ class TopicTransformer extends TransformerAbstract
         return [
             'id' => $topic->id,
             'title' => $topic->title,
+            'intro' => $topic->intro,
             'body' => $topic->body,
             'img' => $topic->img,
             'user_id' => (int) $topic->user_id,

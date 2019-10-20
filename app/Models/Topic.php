@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Topic extends Model
 {
-    protected $fillable = ['title', 'body', 'category_id', 'img'];
+    protected $fillable = ['title', 'intro', 'body', 'category_id', 'img'];
 
     public function replies()
     {
@@ -44,6 +44,16 @@ class Topic extends Model
     public function scopeRecent($query)
     {
         return $query->orderBy('created_at', 'desc');
+    }
+
+    public function zan($user_id)
+    {
+        return $this->hasOne(Zans::class)->where('user_id', $user_id);
+    }
+
+    public function zans()
+    {
+        return $this->hasMany(Zans::class);
     }
 
 }

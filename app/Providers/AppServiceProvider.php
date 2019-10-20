@@ -58,6 +58,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \App\Models\Zans::observe(\App\Observers\zanObserver::class);
     }
 }

@@ -75,6 +75,13 @@ $api->version('v1',[
                ->name('api.topics.update');
            $api->delete('topics/{topic}', 'TopicsController@destroy')
                ->name('api.topics.destroy');
+
+           //点赞 取消点赞
+           $api->post('/topics/{topic}/zans', 'ZansController@store')
+               ->name('api.topics.zans.store');
+           $api->delete('/topics/{topic}/zans', 'ZansController@destroy')
+               ->name('api.topics.zans.destroy');
+
        });
 
 
