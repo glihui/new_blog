@@ -56,6 +56,10 @@ $api->version('v1',[
        $api->get('topics/{topic}', 'TopicsController@show')
            ->name('api.topics.show');
 
+       // 话题回复列表
+       $api->get('topics/{topic}/replies', 'RepliesController@index')
+           ->name('api.topics.replies.index');
+
        // 需要 token 验证的接口
        $api->group(['middleware' => 'api.auth'], function ($api) {
             //当前登录用户信息
@@ -81,6 +85,15 @@ $api->version('v1',[
                ->name('api.topics.zans.store');
            $api->delete('/topics/{topic}/zans', 'ZansController@destroy')
                ->name('api.topics.zans.destroy');
+
+           //评论话题
+           $api->post('topics/{topic}/replies', 'RepliesController@store')
+               ->name('api.topics.replies.store');
+
+           // 删除回复
+           $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
+               ->name('api.topics.replies.destroy');
+
 
        });
 
