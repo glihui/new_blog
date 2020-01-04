@@ -60,6 +60,10 @@ $api->version('v1',[
        $api->get('topics/{topic}/replies', 'RepliesController@index')
            ->name('api.topics.replies.index');
 
+       // 首页banner列表
+       $api->get('banners', 'BannersController@index')
+           ->name('api.banners.index');
+
        // 需要 token 验证的接口
        $api->group(['middleware' => 'api.auth'], function ($api) {
             //当前登录用户信息
@@ -94,6 +98,15 @@ $api->version('v1',[
            $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
                ->name('api.topics.replies.destroy');
 
+           //banner图设置
+           $api->post('banners', 'BannersController@store')
+               ->name('api.banners.store');
+
+           $api->patch('banners/{banner}', 'BannersController@update')
+               ->name('api.banners.update');
+
+           $api->delete('banners/{banner}', 'BannersController@destroy')
+               ->name('api.banners.destroy');
 
        });
 
