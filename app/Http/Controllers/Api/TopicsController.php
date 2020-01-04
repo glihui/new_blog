@@ -69,6 +69,15 @@ class TopicsController extends Controller
     public function show(Topic $topic)
     {
         $topic->increment('view_count', 1);
+
+        if (\Auth::guard('api')->check()) {
+            if ($topic->zan($this->user()->id)->exists()) {
+                $topic->is_zan = 1;
+            } else {
+                $topic->is_zan = 0;
+            }
+        }
+
         return $this->response->item($topic, new TopicTransformer());
     }
 
